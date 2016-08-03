@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ReciteMaster.master.cs" Inherits="ReciteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheetmastermaha.css" rel="stylesheet" />
+    <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style8 {
+            width: 1300px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="header" class="auto-style8">
+             <i class="fa fa-ellipsis-v" aria-hidden="true" style=" font-size:100px; color:white; float:right; margin-right:20px; margin-top:15px;" onclick='if(getElementById("rightcolumn").style.visibility == "hidden"){getElementById("rightcolumn").style.visibility = "visible";} else {getElementById("rightcolumn").style.visibility = "hidden";}'  ></i>
+            </div>
+        <div id="leftcolumn" style="width: 80%; float:left">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+         
+        &nbsp;&nbsp;&nbsp;
+        <div id="rightcolumn" class="auto-style13">
+            <table>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label1" runat="server" Text="Home"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label4" runat="server" Text="Logs"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label5" runat="server" Text="Profile"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label2" runat="server" Text="Sign out"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label3" runat="server" Text="Settings"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+         
+        <br />
+      
+    </div>
+    </form>
+
+     <script type="text/javascript">
+
+         var div = document.getElementById('rightcolumn');
+         div.style.visibility = 'hidden';
+       
+         function showsidebar() {
+             alert("error");
+             getElementById("rightcolumn").style.visibility = "visible";
+         }
+
+    </script>
+</body>
+</html>

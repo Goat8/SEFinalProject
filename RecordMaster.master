@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RecordMaster.master.cs" Inherits="RecordMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheetmasterRecord.css" rel="stylesheet" />
+ <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 7px;
+        }
+        .auto-style2 {
+            width: 77px;
+        }
+        .auto-style5 {
+            width: 77px;
+            height: 31px;
+        }
+        .auto-style6 {
+            height: 31px;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 497px;
+        }
+        .auto-style8 {
+            height: 297px;
+        }
+        .auto-style9 {
+            height: 113px;
+            width: 680px;
+        }
+        .auto-style10 {
+            width: 100%;
+        }
+        .auto-style12 {
+            width: 233px;
+        }
+        .auto-style13 {
+            width: 273px;
+        }
+        .auto-style14 {
+            width: 1034px;
+            height: 74px;
+        }
+        .auto-style15 {
+            width: 680px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header" class="auto-style14">
+             <i class="fa fa-home" aria-hidden="true" style="font-size:100px; color:white; float:left; margin-left:20px; margin-top:15px;"></i>
+             <i class="fa fa-ellipsis-v" aria-hidden="true" style=" font-size:100px; color:white; float:right; margin-right:20px; margin-top:15px;" onclick='if(getElementById("rightcolumn").style.visibility == "hidden"){getElementById("rightcolumn").style.visibility = "visible";} else {getElementById("rightcolumn").style.visibility = "hidden";}'  ></i>
+            
+             </div>
+         <div id="leftColumn" class="auto-style8">
+             <table class="auto-style7">
+                 <tr>
+                     <td class="auto-style9"></td>
+                 </tr>
+                 <tr>
+                     <td style="text-align:center" class="auto-style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="XX-Large" ForeColor="#CCCCCC" Text="Record"></asp:Label>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td style="text-align:center" onmouseover="this.className='TheTextOn'" onmouseout="this.className='TheTextOff'" class="auto-style15" ><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>&nbsp;</td>
+                 </tr>
+                 <tr>
+                     <td style="text-align:center" class="auto-style15">
+                         <table class="auto-style10">
+                             <tr>
+                                 <td class="auto-style13">
+                                     <asp:Button ID="Button1" runat="server" BorderStyle="None" Font-Size="Large" ForeColor="#999999" Text="ShowMistakes" Width="133px" OnClick="Button1_Click" />
+                                 </td>
+                                 <td class="auto-style12">
+                                     <asp:Button ID="Button2" runat="server" BorderColor="#CCCCCC" BorderStyle="None" Font-Size="Large" ForeColor="#999999" Text="Translate" Width="101px" />
+                                 </td>
+                                 <td>
+                                     <asp:Button ID="Button3" runat="server" BorderColor="#CCCCCC" BorderStyle="None" Font-Size="Large" ForeColor="#999999" Text="TryAgain" Width="123px" />
+                                 </td>
+                             </tr>
+                         </table>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td class="auto-style15">&nbsp;</td>
+                 </tr>
+             </table>
+        </div><div id="rightcolumn">
+
+
+
+            <table align="left" cellspacing="0" cellpadding="0" border="0" class="auto-style1" style="border-collapse:collapse;border: none;">
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                    </td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label1" runat="server" Text="Home"></asp:Label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="auto-style5">
+                    </td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label4" runat="server" Text="Logs"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="auto-style5">
+                    </td>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label5" runat="server" Text="Profile"></asp:Label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"><asp:Label ID="Label2" runat="server" Text="Sign out"></asp:Label></td>
+                </tr>
+
+
+                <tr>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6"><asp:Label ID="Label3" runat="server" Text="Settings"></asp:Label></td>
+                </tr>
+            </table>
+
+        </div>
+         
+        
+    </div>
+    </form>
+
+     <script type="text/javascript">
+
+         var div = document.getElementById('rightcolumn');
+         div.style.visibility = 'hidden';
+       
+         function showsidebar() {
+
+             getElementById("rightcolumn").style.visibility = "visible";
+         }
+
+    </script>
+</body>
+</html>

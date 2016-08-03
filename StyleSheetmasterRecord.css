@@ -1,0 +1,36 @@
+﻿body {
+}
+
+#header {
+    background-color: #099f98;
+    height: 130px;
+    width: 1050px;
+    text-align: center;
+    text-size-adjust: 150%;
+    box-shadow: 10px 10px 5px grey;
+    background-image: url('images/header.png');
+}
+#leftColumn {
+        float:left;
+        width:70%;
+       height: 500px;
+}
+#rightcolumn{
+    height: 200px;
+    float:right;
+    width:30%;
+    background-color: #91aee4;
+    opacity: 0.4;
+     filter: alpha(opacity=40);
+    
+    
+}
+   .TheTextOff{
+background-color:white;
+
+}
+
+.TheTextOn{
+background-color:darkgrey;
+
+}

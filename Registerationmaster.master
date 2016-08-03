@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Registerationmaster.master.cs" Inherits="Registerationmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <link href="signandlogin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 59px;
+        }
+        .auto-style4 {
+            width: 95%;
+        }
+        .auto-style5 {
+            margin-left: 480px;
+        }
+        .auto-style8 {
+            height: 23px;
+        }
+        .auto-style9 {
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+        
+            <div id="header">
+
+            </div>
+        
+           
+
+        
+
+
+                    <div style="text-align:center;">
+                <div style="width:50%; margin: 0 auto; text-align:left;">
+           <table style="width:500%;">
+
+           </table> 
+            
+                    <table class="auto-style4">
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                           
+                            <td class="auto-style2" style="border: medium solid #FFFFFF; background-color: #91aee4 ; text-align:center">
+                                
+                                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Text="SIGN UP" style="margin-left: auto; margin-right: auto; text-align: center"></asp:Label>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="auto-style9">
+                                <br />
+                                <br />
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+            
+                    <table class="auto-style1">
+                        <tr>
+                            <td style="border: medium solid #91aee4; color: #91aee4; font-weight: bolder;" class="auto-style8">FIRST NAME:<asp:TextBox ID="firstname" runat="server" BorderStyle="None" Width="205px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style8">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: medium solid #91aee4; color: #91aee4; font-weight: bolder;">LAST NAME:<asp:TextBox ID="lastname" runat="server" BorderStyle="None" Width="205px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: medium solid #91aee4; color: #91aee4; font-weight: bolder;">PHONE NO:<asp:TextBox ID="phoneno" runat="server" BorderStyle="None" Width="205px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: medium solid #91aee4; color: #91aee4; font-weight: bolder;">CNIC:<asp:TextBox ID="cnic" runat="server" BorderStyle="None" Width="205px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: medium solid #91aee4; color: #91aee4; font-weight: bolder;" class="auto-style8">EMAIL ID:<asp:TextBox ID="email" runat="server" BorderStyle="None" Width="205px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style8">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style8" style="border: medium solid #91aee4; font-size: larger; font-weight: bold; color: #91aee4;">
+                                PASSWORD:<asp:TextBox ID="TextBox1" runat="server" BorderStyle="None"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style8" style="border: medium none #FFFFFF; font-size: larger; font-weight: bold; color: #91aee4;">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="border: thin none #FFFFFF ; text-align:center">
+
+
+
+  
+       
+                                   
+
+
+  
+       
+                                    <asp:Button ID="submit" runat="server" Text="SUBMIT" BackColor="#91AEE4" BorderColor="White" BorderStyle="Solid" Font-Bold="True" Font-Size="X-Large" ForeColor="White" />
+        
+
+
+  
+
+                            </td>
+                        </tr>
+                    </table>
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+            
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td> 
+            
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+            
+            </div>
+</div>
+
+
+
+  
+       
+                                   
+
+
+  
+       
+                                    <p class="auto-style5">
+                                        &nbsp;</p>
+        
+
+
+   <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+</body>
+</html>

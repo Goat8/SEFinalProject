@@ -1,0 +1,33 @@
+﻿body {
+}
+#wrapper {
+    height:1130px;
+    width: 1300px;
+}
+#header {
+    background-color: #099f98;
+    height: 130px;
+    width: 1300px;
+    text-align: center;
+    text-size-adjust: 150%;
+    box-shadow: 10px 10px 5px grey;
+    background-image: url('images/header.png');
+}
+
+#rightcolumn{
+    height: 200px;
+    margin-left: 1200px;
+   
+   
+    background-color: #91aee4;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    
+    
+}
+#leftcolumn {
+     
+      
+      height:1000px;
+
+}
