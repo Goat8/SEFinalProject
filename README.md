@@ -1,3 +1,1 @@
-# SEFinalProject
-# SEFinalProject
-# SEFinalProject
+# Protoype of Tajweed mistake detector application 
